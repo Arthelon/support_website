@@ -1,38 +1,38 @@
-<div id="header">
 
+{% assign current = page.url | downcase | split: '/' %}
+<div id="header">
     <!-- Logo -->
     <h1><a href="index.html" id="logo">Support! International</a></h1>
 
     <!-- Nav -->
     <nav id="nav">
         <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li>
+            <li {% if current.size == 0' %}class='current'{% endif %}><a href="{{site.url}}/">Home</a></li>
+            <li  {% if current[1] == 'about' %}class='current'{% endif %}>
                 <a href="#">About Us</a>
                 <ul>
-                    <li><a href="/about/">About Support!</a></li>
-                    <li><a href="/about/team">Management and Team</a></li>
-                    <li><a href="/about/reports">Annual Reports</a></li>
+                    <li><a href="{{site.url}}/about/">About Support!</a></li>
+                    <li><a href="{{site.url}}/about/team">Management and Team</a></li>
+                    <li><a href="{{site.url}}/about/reports">Annual Reports</a></li>
                 </ul>
             </li>
-            <li>
+            <li  {% if current[1] == 'work' %}class='current'{% endif %}>
                 <a href="#">Our Work</a>
                 <ul>
                     <li>
-                        <a href="#">Sites</a>
+                        <a href="{{site.url}}/work/sites">Sites</a>
                         <ul>
-                            <li><a href="#">Lorem dolor</a></li>
-                            <li><a href="#">Phasellus magna</a></li>
-                            <li><a href="#">Magna phasellus</a></li>
-                            <li><a href="#">Etiam nisl</a></li>
-                            <li><a href="#">Veroeros feugiat</a></li>
+                            <li><a href="#">Tak Oi</a></li>
+                            <li><a href="#">Aberdeen Technical School</a></li>
+                            <li><a href="#">Australian International School</a></li>
+                            <li><a href="#">Man Kiu College</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Events</a></li>
+                    <li><a href="{{site.url}}/work/events">Events</a></li>
                 </ul>
             </li>
-            <li><a href="/gallery">Gallery</a></li>
-            <li><a href="/partners">Partners</a></li>
+            <li {% if current[1] == 'gallery' %}class='current'{% endif %}><a href="{{site.url}}/gallery">Gallery</a></li>
+            <li  {% if current[1] == 'partners' %}class='current'{% endif %}><a href="{{site.url}}/partners">Partners</a></li>
         </ul>
     </nav>
 
