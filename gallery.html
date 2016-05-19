@@ -3,10 +3,25 @@ layout: default
 title: Gallery - Support! International
 permalink: /gallery/
 ---
+{% contentfor head %}
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.4.2/themes/classic/galleria.classic.min.css">
+{% endcontentfor %}
+
 <div class="wrapper style2">
     <div class="container">
         <div class="row">
-            <h1>Hello World</h1>
+            <div></div>
+            <div class="galleria">
+                <!--{% for i in (1..11) %}-->
+                    <!--<img src="{{site.url}}/images/gallery/{{i}}.JPG">-->
+                <!--{% endfor %}-->
+            </div>
         </div>
     </div>
 </div>
+
+{% contentfor script %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.4.2/galleria.min.js"></script>
+<script src="{{site.url}}/js/gallery.js"></script>
+{% endcontentfor %}
