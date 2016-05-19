@@ -13,13 +13,12 @@
     <!--<img src="img/img02.jpg">-->
 
     <script>
-        var bgImageArray = ["lonely.jpg", "uluwatu.jpg", "carezza-lake.jpg", "batu-bolong-temple.jpg"],
-            base = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/full-",
+        var bgImageArray = ["img01.jpg", "img02.jpg"],
+            base = "img/",
             secs = 5;
 
         bgImageArray.forEach(function(img) {
-        new Image().src = base + img;
-        // caches images, avoiding white flash between background replacements
+            new Image().src = base + img;
         });
 
         function backgroundSequence() {
@@ -29,13 +28,13 @@
                 setTimeout(function() {
                     document.documentElement.style.background = "url(" + base + bgImageArray[k] + ") no-repeat center center fixed";
                     document.documentElement.style.backgroundSize = "cover";
-                if ((k + 1) === bgImageArray.length) {
-                    setTimeout(function() {
-                        backgroundSequence()
-                    }, (secs * 1000))
-                } else {
-                    k++;
-                }
+                    if ((k + 1) === bgImageArray.length) {
+                        setTimeout(function() {
+                            backgroundSequence()
+                        }, (secs * 1000))
+                    } else {
+                        k++;
+                    }
                 }, (secs * 1000) * i)
             }
         }
