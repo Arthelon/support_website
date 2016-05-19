@@ -1,3 +1,6 @@
+---
+---
+
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
@@ -25,13 +28,6 @@ $on-laptop:        800px;
 /*@import url("font-awesome.min.css");*/
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
-/*
-	Arcana by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-/* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -1844,7 +1840,7 @@ $on-laptop:        800px;
 		-webkit-transition: color 0.1s ease-in-out, border-color 0.1s ease-in-out, opacity 0.1s ease-in-out;
 		-ms-transition: color 0.1s ease-in-out, border-color 0.1s ease-in-out, opacity 0.1s ease-in-out;
 		transition: color 0.1s ease-in-out, border-color 0.1s ease-in-out, opacity 0.1s ease-in-out;
-		color: #37c0fb;
+		color: #fdd048;
 		text-decoration: none;
 		border-bottom: dotted 1px;
 	}
@@ -2101,7 +2097,7 @@ $on-laptop:        800px;
 		.icon.major {
 			text-align: center;
 			cursor: default;
-			background-color: #37c0fb;
+			background-color: #fdd048;
 			/*background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");*/
 			/*background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");*/
 			/*background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");*/
@@ -3226,4 +3222,10 @@ div#texttop {
 
 @media all and (max-width: 770px) {
 	div#texttop { display: none; }
+}
+
+#logo {
+	text-decoration: none;
+	border-bottom: 1px solid black;
+	padding: 0.1em 0 0.1em 0
 }
