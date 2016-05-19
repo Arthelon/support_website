@@ -2585,43 +2585,89 @@ $on-laptop:        800px;
 
 /* Footer */
 
-	#footer {
+#footer {
+	width: 100%;
+	position: relative;
+	top: 100%;
+	left: 0;
+	background-color: white;
+}
+
+#footer a {
+	color: inherit;
+	border-bottom-color: rgba(71, 71, 71, 0.25);
+}
+
+#footer a:hover {
+	/*color: #37c0fb;*/
+	color: #fdd048;
+	border-bottom-color: transparent;
+}
+
+#footer .container {
+	margin-bottom: 4em;
+}
+
+#footer .icons {
+	text-align: center;
+	margin: 0;
+}
+
+#footer .icons a {
+	color: #999;
+}
+
+#footer .icons a:hover {
+	color: #474747;
+}
+
+#footer .copyright {
+	color: #999;
+	margin-top: 1.5em;
+	text-align: center;
+	font-size: 0.9em;
+}
+
+/* cover Footer */
+
+	#cvfooter {
 		width: 100%;
 		position: absolute;
-		top: 120%;
+		top: 100%;
 		left: 0;
 		background-color: white;
+		padding-top: 30px;
 	}
 
-		#footer a {
+		#cvfooter a {
 			color: inherit;
 			border-bottom-color: rgba(71, 71, 71, 0.25);
 		}
 
-			#footer a:hover {
+			#cvfooter a:hover {
 				/*color: #37c0fb;*/
 				color: #fdd048;
 				border-bottom-color: transparent;
 			}
 
-		#footer .container {
+		#cvfooter .container {
 			margin-bottom: 4em;
 		}
 
-		#footer .icons {
+		#cvfooter .icons {
 			text-align: center;
 			margin: 0;
 		}
 
-			#footer .icons a {
+			#cvfooter .icons a {
 				color: #999;
 			}
 
-				#footer .icons a:hover {
+				#cvfooter .icons a:hover {
 					color: #474747;
 				}
 
-		#footer .copyright {
+		#cvfooter .copyright {
 			color: #999;
 			margin-top: 1.5em;
 			text-align: center;
@@ -3174,6 +3220,7 @@ $on-laptop:        800px;
   position: absolute;
   bottom: 0;
   left: 0;
+
   width: 100%;
   height: 10%;
   display: none;
@@ -3183,30 +3230,28 @@ $on-laptop:        800px;
 .team-image-wrapper:hover .image-caption-wrapper {
   display: block;
   background: rgba(0, 0, 0, .6);
-  padding: 0.2em;
+	width: 100%;
 }
 
 .image-caption {
-
+	text-align: center;
 }
 
 .team-image-wrapper {
-  padding: 0 !important;
+	top: 20%;
+  padding: 5px;
   width: 33%;
   position: relative;
+  vertical-align: text-top;
 }
 
 /* - Fade In/Out -*/
-* {
-	box-sizing: border-box;
-}
 html {
 	margin: 0;
 	background-size: cover;
-	background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/full-lonely.jpg") no-repeat center center fixed;
 	background-blend-mode: darken;
 	/*blend mode optional at this stage; will be used more in the next demo.*/
-	transition: 3s;
+	transition: 4s;
 }
 
 div#texttop {
@@ -3229,3 +3274,4 @@ div#texttop {
 	border-bottom: 1px solid black;
 	padding: 0.1em 0 0.1em 0
 }
+

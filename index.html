@@ -1,5 +1,109 @@
 ---
-layout: default
 title: Support International
 permalink: /
 ---
+
+<body>
+<div id="page-wrapper">
+    {% include head.html %}
+    {% include header.html %}
+    {{ content }}
+</div>
+
+<div id="cvfooter">
+    <div class="container">
+        <div class="row">
+            <section class="3u 6u(narrower) 12u$(mobilep)">
+                <h3>Office Address</h3>
+                <p>Suite 609 New World Tower 1, 16-18 Queen's Road Central, Hong Kong</p>
+            </section>
+            <section class="3u 6u$(narrower) 12u$(mobilep)">
+                <h3>More Links to Stuff</h3>
+                <ul class="links">
+                    <li><a href="#">Duis neque nisi dapibus</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum accumsan sed</a></li>
+                    <li><a href="#">Mattis et sed accumsan</a></li>
+                    <li><a href="#">Duis neque nisi sed</a></li>
+                    <li><a href="#">Sed et dapibus quis</a></li>
+                    <li><a href="#">Rutrum amet varius</a></li>
+                </ul>
+            </section>
+            <section class="6u 12u(narrower)">
+                <h3>Get In Touch</h3>
+                <form action="https://formspree.io/{{site.email}}"
+                      method="POST">
+                    <div class="row 50%">
+                        <div class="6u 12u(mobilep)">
+                            <input type="text" name="name" id="name" placeholder="Name"/>
+                        </div>
+                        <div class="6u 12u(mobilep)">
+                            <input type="email" name="email" id="email" placeholder="Email"/>
+                        </div>
+                    </div>
+                    <div class="row 50%">
+                        <div class="12u">
+                            <textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="row 50%">
+                        <div class="12u">
+                            <ul class="actions">
+                                <li><input type="submit" class="button alt" value="Send Message"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <!-- Icons -->
+    <ul class="icons">
+        <li><a href="https://twitter.com/{{site.twitter_username}}" class="icon fa-twitter"><span
+                class="label">Twitter</span></a></li>
+        <li><a href="https://www.facebook.com/{{site.facebook_username}}" class="icon fa-facebook"><span
+                class="label">Facebook</span></a></li>
+    </ul>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <ul class="menu">
+            <li>&copy; 2016 Support!. All rights reserved.</li>
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </div>
+
+</div>
+<script>
+    var bgImageArray = ["img01.jpg", "img02.jpg"],
+            base = "{{site.url}}/img/",
+            secs = 5;
+
+    function backgroundSequence() {
+        window.clearTimeout();
+        var k = 0;
+        for (i = 0; i < bgImageArray.length; i++) {
+            setTimeout(function() {
+                document.documentElement.style.background = "url(" + base + bgImageArray[k] + ") no-repeat center center fixed";
+                document.documentElement.style.backgroundSize = "cover";
+                if ((k + 1) === bgImageArray.length) {
+                    setTimeout(function() {
+                        backgroundSequence()
+                    }, (secs * 1000))
+                } else {
+                    k++;
+                }
+            }, (secs * 1000) * i)
+        }
+    }
+    backgroundSequence();
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.dropotron/1.4.3/jquery.dropotron.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.0/skel.min.js"></script>
+<script src="{{site.url}}/js/util.js"></script>
+<script src="{{site.url}}/js/main.js"></script>
+</body>
+</html>
