@@ -3257,6 +3257,7 @@ html {
 	padding-bottom: 0px;
 	max-width: 40%;
 	text-align: center;
+	font-family: Montserrat, Helvetica, sans-serif;
 	//vertical-align: middle;
 	//border-top: 1px solid white;
 	//border-bottom: 1px solid white;
@@ -3264,4 +3265,8 @@ html {
 
 #sidebar {
 	color: #444;
+}
+
+.dropdown-links li{
+	padding: 0 0.2em;
 }
