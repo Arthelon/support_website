@@ -2070,7 +2070,8 @@ $on-laptop:        800px;
 
 			.image.featured img {
 				display: block;
-				width: 100%;
+				max-width: 30%;
+				text-align: center;
 			}
 
 /* Icon */
@@ -3205,7 +3206,7 @@ $on-laptop:        800px;
 	}
 
 .team-image {
-  width: 100%;
+	width: 100%;
 }
 
 .team-image-wrapper .image-caption-wrapper {
@@ -3218,33 +3219,33 @@ $on-laptop:        800px;
   color: #FFF;
 }
 
-.team-image-wrapper:hover .image-caption-wrapper {
-  display: block;
-	width: 100%;
-}
+//.team-image-wrapper:hover .image-caption-wrapper {
+//  display: block;
+//	width: 100%;
+//}
 
-.image-caption .title-caption {
-	text-align: center;
-	padding: 10px;
-	//position: relative;
-	//top: 5%;
-	background-color: rgba(0,0,0,0.6);
-	font-size: 20px;
-	color: white;
-}
+//.image-caption {
+//	text-align: center;
+//	padding: 10px;
+//	//position: relative;
+//	//top: 5%;
+//	//background-color: rgba(0,0,0,0.6);
+//	//font-size: 20px;
+//	//color: white;
+//}
 
-.title-caption {
-	display: block;
-	text-align: center;
-	padding: 5px;
-	font-size: 12px;
-	color: white;
-}
+//.title-caption {
+//	display: block;
+//	text-align: center;
+//	padding: 5px;
+//	font-size: 12px;
+//	color: white;
+//}
 
 .team-image-wrapper {
 	top: 20%;
+	max-width: 20%;
   padding: 5px;
-  width: 33%;
   position: relative;
 }
 
@@ -3260,16 +3261,16 @@ html {
 #logo {
 	background-color: none;
 	position: absolute;
-	left: 32%;
+	left: 30%;
 	top: 45%;
 	color: white;
-	font-size: 45px;
+	font-size: 47px;
 	padding-top: 20px;
 	padding-bottom: 0px;
-	max-width: 40%;
+	max-width: 70%;
 	text-align: center;
 	font-family: Montserrat, Helvetica, sans-serif;
-	//vertical-align: middle;
+	vertical-align: middle;
 	//border-top: 1px solid white;
 	//border-bottom: 1px solid white;
 }
@@ -3289,11 +3290,17 @@ html {
 	display: flex;
 	justify-content: center;
 }
-
 #content {
 	min-height: 300px;
 }
 
 .branch-img {
 	width: 100%;
+}
+#team{
+	position: relative;
+	left: 48%;
+	color: #444;
+	padding: 15px 5px;
+
 }
