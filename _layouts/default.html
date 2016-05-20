@@ -11,18 +11,18 @@
 </div>
 <script>
     var bgImageArray = ["img01.jpg", "img02.jpg"],
-            base = "{{site.url}}/img/",
+            base = "{{site.url}}/images/main_slider/",
             secs = 5;
 
     function backgroundSequence() {
         window.clearTimeout();
         var k = 0;
         for (i = 0; i < bgImageArray.length; i++) {
-            setTimeout(function() {
+            setTimeout(function () {
                 document.documentElement.style.background = "url(" + base + bgImageArray[k] + ") no-repeat center center fixed";
                 document.documentElement.style.backgroundSize = "cover";
                 if ((k + 1) === bgImageArray.length) {
-                    setTimeout(function() {
+                    setTimeout(function () {
                         backgroundSequence()
                     }, (secs * 1000))
                 } else {
@@ -38,5 +38,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.0/skel.min.js"></script>
 <script src="{{site.url}}/js/util.js"></script>
 <script src="{{site.url}}/js/main.js"></script>
+{% contentblock script %}
 </body>
 </html>
