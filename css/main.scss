@@ -2316,11 +2316,13 @@ $on-laptop:        800px;
 
 	.box.highlight {
 		text-align: center;
+		width: 100%;
 	}
 
 	.box.post {
 		position: relative;
 		margin: 0 0 2em 0;
+
 	}
 
 		.box.post:after {
@@ -2330,7 +2332,11 @@ $on-laptop:        800px;
 		}
 
 		.box.post .inner {
-			margin-left: calc(50% + 2em);
+			//margin-left: calc(50% + 2em);
+			h3 {
+				text-align: center;
+			}
+
 		}
 
 			.box.post .inner > :last-child {
@@ -2338,8 +2344,9 @@ $on-laptop:        800px;
 			}
 
 		.box.post .image {
-			width: 50%;
+			width: 100%;
 			margin: 0;
+			//vertical-align: text-top;
 		}
 
 /* Header */
@@ -3296,11 +3303,18 @@ html {
 
 .branch-img {
 	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 0px;
 }
 #team{
 	position: relative;
 	left: 48%;
 	color: #444;
 	padding: 15px 5px;
+}
 
+.branch-item:before {
+	display: block;
+	content: '';
 }
