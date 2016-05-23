@@ -2,10 +2,9 @@
 title: Support International
 permalink: /
 ---
-
+{% include head.html %}
 <body>
 <div id="page-wrapper">
-    {% include head.html %}
 
     {% assign current = page.url | downcase | split: '/' %}
     <div id="header">
@@ -15,7 +14,7 @@ permalink: /
             <ul>
                 <li {% if current.size == 0 %}class='current'{% endif %}><a href="{{site.url}}/">Home</a></li>
                 <li {% if current[1] == 'about' %}class='current'{% endif %}>
-                <a href="#">About Us</a>
+                <a href="{{site.url}}/about">About Us</a>
                 <ul class="dropdown-links">
                     <li><a href="{{site.url}}/about/">About Support!</a></li>
                     <li><a href="{{site.url}}/about/team">Management & Team</a></li>
@@ -23,10 +22,10 @@ permalink: /
                 </ul>
                 </li>
                 <li  {% if current[1] == 'work' %}class='current'{% endif %}>
-                <a href="#">Our Work</a>
+                <a href="{{site.url}}/work/branches">Our Work</a>
                 <ul class="dropdown-links">
                     <li>
-                        <a href="{{site.url}}/work/sites">Sites</a>
+                        <a href="{{site.url}}/work/branches">Branches</a>
                         <!--<ul class="dropdown-links">-->
                             <!--<li><a href="#">Tak Oi</a></li>-->
                             <!--<li><a href="#">Aberdeen Technical School</a></li>-->
@@ -94,7 +93,6 @@ permalink: /
     <div class="copyright">
         <ul class="menu">
             <li>&copy; 2016 Support!. All rights reserved.</li>
-            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
         </ul>
     </div>
 

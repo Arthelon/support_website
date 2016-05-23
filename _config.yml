@@ -1,11 +1,15 @@
 title: Support! International
 email: info@supportlearning.org
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: >
+  Founded in 2014, Support! International is a global youth-led education NGO dedicated
+  to bringing innovative educational programmes to different communities in need. Since
+  our founding, we have grown from 1 site and 1 programme to 6 sites operating 9 programmes,
+  each initiated, led and maintained by passionate, driven and caring young leaders.
+  Our mission has continually been to create opportunities and foster connections for
+  individuals from all backgrounds within communities, under the guiding principle and
+  firm belief that young people are tomorrow’s leaders.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://127.0.0.1:4000" # the base hostname & protocol for your site
+url: "http://www.supportlearning.org" # the base hostname & protocol for your site
 twitter_username: support
 facebook_username: supportintlhk
 
