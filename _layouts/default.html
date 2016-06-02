@@ -10,28 +10,10 @@
     {% include footer.html %}
 </div>
 <script>
-    var bgImageArray = ["img01.jpg", "img02.jpg","img04.jpg"],
-            base = "{{site.url}}/images/main_slider/",
-            secs = 5;
-
-    function backgroundSequence() {
-        window.clearTimeout();
-        var k = 0;
-        for (i = 0; i < bgImageArray.length; i++) {
-            setTimeout(function () {
-                document.documentElement.style.background = "url(" + base + bgImageArray[k] + ") no-repeat center center fixed";
-                document.documentElement.style.backgroundSize = "cover";
-                if ((k + 1) === bgImageArray.length) {
-                    setTimeout(function () {
-                        backgroundSequence()
-                    }, (secs * 1000))
-                } else {
-                    k++;
-                }
-            }, (secs * 1000) * i)
-        }
-    }
-    backgroundSequence();
+    var base = "{{site.url}}/images/main_slider/"
+    var bgImageArray = ["img01.jpg", "img02.jpg", "img03.jpg", "img04.jpg"]
+    document.documentElement.style.background = "url(" + base + bgImageArray[Math.floor(Math.random()*4)]+") no-repeat center center fixed";
+    document.documentElement.style.backgroundSize = "cover";
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.dropotron/1.4.3/jquery.dropotron.min.js"></script>

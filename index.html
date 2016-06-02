@@ -98,7 +98,7 @@ permalink: /
 
 </div>
 <script>
-    var bgImageArray = ["img01.jpg", "img02.jpg","img04.jpg"],
+    var bgImageArray = ["img01.jpg", "img02.jpg", "img03.jpg", "img04.jpg"],
             base = "{{site.url}}/images/main_slider/",
             secs = 5;
 
@@ -129,3 +129,21 @@ permalink: /
 <script src="{{site.url}}/js/main.js"></script>
 </body>
 </html>
+
+{% contentfor script %}
+var bgImageArray = ["img01.jpg", "img02.jpg", "img03.jpg", "img04.jpg"],
+base = "{{site.url}}/images/main_slider/",
+secs = 5;
+
+var currentImage = 0
+
+setInterval(function() {
+document.documentElement.style.background = "url(" + base + bgImageArray[currentImage] + ") no-repeat center center fixed";
+document.documentElement.style.backgroundSize = "cover";
+if ((currentImage + 1) === bgImageArray.length) {
+currentImage = 0
+} else {
+currentImage++;
+}
+}, secs*1000)
+{% endcontentfor %}

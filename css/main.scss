@@ -3226,29 +3226,6 @@ $on-laptop:        800px;
   color: #FFF;
 }
 
-//.team-image-wrapper:hover .image-caption-wrapper {
-//  display: block;
-//	width: 100%;
-//}
-
-//.image-caption {
-//	text-align: center;
-//	padding: 10px;
-//	//position: relative;
-//	//top: 5%;
-//	//background-color: rgba(0,0,0,0.6);
-//	//font-size: 20px;
-//	//color: white;
-//}
-
-//.title-caption {
-//	display: block;
-//	text-align: center;
-//	padding: 5px;
-//	font-size: 12px;
-//	color: white;
-//}
-
 .team-image-wrapper {
 	top: 20%;
 	max-width: 20%;
@@ -3260,7 +3237,7 @@ $on-laptop:        800px;
 html {
 	margin: 0;
 	background-size: cover;
-	background-blend-mode: darken;
+	//background-blend-mode: darken;
 	/*blend mode optional at this stage; will be used more in the next demo.*/
 	transition: 4s;
 }
@@ -3341,4 +3318,12 @@ html {
 
 .partners img {
 	margin-top: 10px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.event-box {
+	padding: 1px 0 0 0;
 }
