@@ -1,0 +1,55 @@
+---
+layout: default
+title: In the News - Support! International
+permalink: /about/news/
+---
+
+<section class="wrapper style1">
+    <div class="container">
+        <div class="row 200%">
+            {% include about-side-links.html %}
+            <div id="about-override" class="8u 12u">
+                <div id="content">
+                    {% for post in site.posts %}
+                    <div class="news-item row">
+                        <img class="news-img"
+                             src="{{site.url}}/images/news/{{post.imageUrl}}"/>
+                        <div class="news-content">
+                            <p class="news-item-title"><strong>{{post.publisher}}: </strong>{{post.title}} (Read <a href="{{post.link}}">Here</a>)</p>
+                            <p>{{post.content}}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            {% if site.total_pages > 1 %}
+            <div class="pagination">
+                {% if site.previous_page %}
+                <a href="{{ site.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;
+                    Prev</a>
+                {% else %}
+                <span>&laquo; Prev</span>
+                {% endif %}
+
+                {% for page in (1..site.total_pages) %}
+                {% if page == site.page %}
+                <em>{{ page }}</em>
+                {% elsif page == 1 %}
+                <a href="{{ site.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                {% else %}
+                <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{
+                    page }}</a>
+                {% endif %}
+                {% endfor %}
+
+                {% if site.next_page %}
+                <a href="{{ site.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+                {% else %}
+                <span>Next &raquo;</span>
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</section>

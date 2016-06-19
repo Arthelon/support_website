@@ -3327,3 +3327,32 @@ html {
 .event-box {
 	padding: 1px 0 0 0;
 }
+
+.news-img {
+	//height: 200px;
+	max-width:33%;
+	float: left;
+}
+
+.news-content {
+	float: right;
+	width: 66%;
+}
+
+.news-content > p {
+	font-size: 0.9em;
+	line-height: 1.4em;
+}
+
+p.news-item-title {
+	font-size: 1.1em;
+	margin-bottom: 1em;
+}
+
+.news-item > * {
+	display: inline-block;
+}
+
+div#about-override {
+	padding-left: 0;
+}
