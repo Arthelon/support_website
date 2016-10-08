@@ -1844,16 +1844,16 @@ $on-laptop:        800px;
 		/*background: #f7f7f7 url("images/bg01.png");*/
 	}
 
-		body.is-loading * {
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-		}
+	body.is-loading * {
+		-moz-transition: none !important;
+		-webkit-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+		-moz-animation: none !important;
+		-webkit-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
 
 	body, input, select, textarea {
 		color: #474747;
@@ -3274,7 +3274,7 @@ html {
 	-o-background-size: cover;
 	//background-blend-mode: darken;
 	/*blend mode optional at this stage; will be used more in the next demo.*/
-	transition: 4s;
+	transition: 2s;
 }
 
 #logo {
