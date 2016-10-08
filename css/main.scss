@@ -185,6 +185,30 @@ $on-laptop:        800px;
 
 	@media screen and (max-width: 840px) {
 
+
+
+		#site-img {
+			width: 100%;
+		}
+
+		#leadership-images {
+			width: 100%;
+		}
+
+		#sidebar {
+			display: none;
+		}
+
+		#about-override {
+			width: 100%;
+		}
+
+		#content {
+			text-align: left;
+			padding-left: 7em;
+			padding-right: 7em;
+		}
+
 		.container.\31 25\25 {
 			width: 100%;
 			max-width: 118.75%;
@@ -210,6 +234,11 @@ $on-laptop:        800px;
 	}
 
 	@media screen and (max-width: 736px) {
+
+		.partners div img {
+			width: 70%;
+			height: 70%;
+		}
 
 		.container.\31 25\25 {
 			width: 100%;
@@ -3069,9 +3098,13 @@ $on-laptop:        800px;
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
+			#content {
+				padding-left: 4em;
+				padding-right: 4em;
+			}
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 1.1em;
 				line-height: 1.35em;
 			}
 
@@ -3228,7 +3261,7 @@ $on-laptop:        800px;
 
 .team-image-wrapper {
 	top: 20%;
-	max-width: 20%;
+	max-width: 33.3%;
   padding: 5px;
   position: relative;
 }
@@ -3367,4 +3400,10 @@ img#site-img {
 
 #special-ja {
 	height: 130px;
+}
+
+.leadership-image-row {
+	display: flex;
+	flex-direction: row;
+	align-content: space-between;
 }
