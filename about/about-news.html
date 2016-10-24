@@ -12,10 +12,9 @@ permalink: /about/news/
                 <div id="content">
                     {% for post in site.posts %}
                     <div class="news-item row">
-                        <img class="news-img"
-                             src="{{site.url}}/images/news/{{post.imageUrl}}"/>
+                        <a class="news-link" href={{post.link}}><img src="{{site.url}}/images/news/{{post.imageUrl}}"/></a>
                         <div class="news-content">
-                            <p class="news-item-title"><strong>{{post.publisher}}: </strong>{{post.title}} (Read <a href="{{post.link}}">Here</a>)</p>
+                            <p class="news-item-title"><strong>{{post.publisher}}: </strong>{{post.title}}</p>
                             <p>{{post.content}}</p>
                         </div>
                     </div>

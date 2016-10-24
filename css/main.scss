@@ -3363,9 +3363,16 @@ html {
 	padding: 1px 0 0 0;
 }
 
-.news-img {
+.news-link {
+	width: 33%;
+	padding: 0;
+	margin-top: 2.4em;
+	border-bottom: 0;
+}
+
+.news-link > img {
 	//height: 200px;
-	max-width:33%;
+	max-width: 100%;
 	float: left;
 }
 
