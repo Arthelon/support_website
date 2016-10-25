@@ -240,6 +240,20 @@ $on-laptop:        800px;
 			height: 70%;
 		}
 
+		.image-caption-wrapper {
+
+			height: 25%;
+
+			p.image-caption {
+				bottom: 0;
+				font-size: 0.9em;
+			}
+
+			.titles-caption {
+				display: none;
+			}
+		}
+
 		.container.\31 25\25 {
 			width: 100%;
 			max-width: 112.5%;
@@ -264,7 +278,21 @@ $on-laptop:        800px;
 
 	}
 
+	@media screen and (max-width: 620px) {
+		.image-caption-wrapper {
+			p.image-caption {
+				font-size: 0.9em;
+				line-height: 1em;
+			}
+		}
+	}
+
 	@media screen and (max-width: 480px) {
+
+		.image-caption-wrapper {
+
+			display: none;
+		}
 
 		.container.\31 25\25 {
 			width: 100%;
@@ -3259,11 +3287,44 @@ $on-laptop:        800px;
   color: #FFF;
 }
 
+.board-image-wrapper {
+	width: 33.3%;
+	padding: 5px;
+	position: relative;
+}
+
+.image-caption-wrapper {
+	position: absolute;
+	bottom: 0;
+    left: 7%;
+    height: 35%;
+    // display: none;
+    color: #FFF;
+
+	p {
+		margin-bottom: 0;
+	}
+
+	.image-caption {
+		font-size: 1em;
+		font-weight: bold;
+	}
+
+	.titles-caption {
+		font-size: 0.7em;
+		line-height: 1.3em;
+	}
+}
+
+.board-header {
+	margin-top: 1em;
+}
+
 .team-image-wrapper {
 	top: 20%;
 	max-width: 33.3%;
-	  padding: 5px;
-	  position: relative;
+	padding: 5px;
+	position: relative;
 }
 
 /* - Fade In/Out -*/
@@ -3311,6 +3372,7 @@ html {
 }
 #content {
 	min-height: 300px;
+	padding-bottom: 2em;
 }
 
 .branch-img {
