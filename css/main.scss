@@ -240,20 +240,6 @@ $on-laptop:        800px;
 			height: 70%;
 		}
 
-		.image-caption-wrapper {
-
-			height: 25%;
-
-			p.image-caption {
-				bottom: 0;
-				font-size: 0.9em;
-			}
-
-			.titles-caption {
-				display: none;
-			}
-		}
-
 		.container.\31 25\25 {
 			width: 100%;
 			max-width: 112.5%;
@@ -278,22 +264,7 @@ $on-laptop:        800px;
 
 	}
 
-	@media screen and (max-width: 620px) {
-		.image-caption-wrapper {
-			p.image-caption {
-				font-size: 0.9em;
-				line-height: 1em;
-			}
-		}
-	}
-
 	@media screen and (max-width: 480px) {
-
-		.image-caption-wrapper {
-
-			display: none;
-		}
-
 		.container.\31 25\25 {
 			width: 100%;
 			max-width: 125%;
@@ -3432,6 +3403,43 @@ html {
 	border-bottom: 0;
 }
 
+.board-item {
+
+	padding-top: 2em;
+	padding-left: 2em;
+	margin-bottom: 1em;
+
+	.board-img {
+		width: 33%;
+		padding: 0;
+		border-bottom: 0;
+	}
+
+	.board-content {
+		float: right;
+		width: 66%;
+		padding: 0.5em 0.5em;
+		p {
+			margin: 0;
+		}
+
+		.board-content-name {
+			font-size: 1.3em;
+			font-weight: bold;
+		}
+
+		.board-content-title {
+			font-style: italic;
+		}
+
+		.board-content-body {
+			font-size: 0.9em;
+			margin-top: 1.5em;
+		}
+	}
+
+}
+
 .news-link > img {
 	//height: 200px;
 	max-width: 100%;
@@ -3480,5 +3488,13 @@ img#site-img {
 }
 
 #special-cocoon {
-	height: 80px;
+	height: 60px;
+}
+
+.ui.modal .content p {
+	line-height: 1.7em;
+}
+
+.board-link {
+	cursor: pointer;
 }
