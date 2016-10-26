@@ -5,7 +5,7 @@ permalink: /about/board
 ---
 <section class="wrapper style1">
     <div class="container">
-        <div class="row 200%">
+        <div class="row">
             {% include about-side-links.html %}
             <div id="about-override" class="8u 12u">
                 <div id="content">
@@ -13,7 +13,7 @@ permalink: /about/board
                         <h2>Board of Directors</h2>
                     </header>
                     <div class="board-item row">
-                        <img class="board-img" src="{{site.url}}/images/board/lau.jpg"/>
+                        <a class="board-img-link" target="lau"><img class="board-img" src="{{site.url}}/images/board/lau.jpg"/></a>
                         <div class="board-content">
                             <p class="board-content-name">Dr. Ming Wai Lau, BBS JP</p>
                             <p class="board-content-title">Chairman, Commission on Youth</p>
@@ -33,7 +33,7 @@ permalink: /about/board
                         </div>
                     </div>
                     <div class="board-item row">
-                        <img class="board-img" src="{{site.url}}/images/board/jacqueline.jpeg"/>
+                        <a class="board-img-link" target="jacqueline"><img class="board-img" src="{{site.url}}/images/board/jacqueline.jpeg"/></a>
                         <div class="board-content">
                             <p class="board-content-name">Ms. Jacqueline Lam</p>
                             <p class="board-content-title">Head of Supply Chain Strategy, HKJC</p>
@@ -53,7 +53,7 @@ permalink: /about/board
                         </div>
                     </div>
                     <div class="board-item row">
-                        <img class="board-img" src="{{site.url}}/images/board/faunce.jpg"/>
+                        <a class="board-img-link" target="faunce"><img class="board-img" src="{{site.url}}/images/board/faunce.jpg"/></a>
                         <div class="board-content">
                             <p class="board-content-name">Dr. Theodore S. Faunce</p>
                             <p class="board-content-title">Headmaster, Chinese International School</p>
@@ -73,7 +73,7 @@ permalink: /about/board
                         </div>
                     </div>
                     <div class="board-item row">
-                        <img class="board-img" src="{{site.url}}/images/board/kenny.jpg"/>
+                        <a class="board-img-link" target="kenny"><img class="board-img" src="{{site.url}}/images/board/kenny.jpg"/></a>
                         <div class="board-content">
                             <p class="board-content-name">Mrs. Conccetina Kenny</p>
                             <p class="board-content-title">Chief Operating Officer, Reach Education Organisation</p>
@@ -96,7 +96,7 @@ permalink: /about/board
                         <h2 class="board-header">Advisors</h2>
                     </header>
                     <div class="board-item row">
-                        <img class="board-img" src="{{site.url}}/images/board/dowson.jpg"/>
+                        <a class="board-img-link" target="dowson"><img class="board-img" src="{{site.url}}/images/board/dowson.jpg"/></a>
                         <div class="board-content">
                             <p class="board-content-name">Mr. Dowson Tong</p>
                             <p class="board-content-title">President of Social Network Group, Tencent</p>
@@ -116,7 +116,7 @@ permalink: /about/board
                         </div>
                     </div>
                     <div class="board-item row">
-                        <img class="board-img" src="{{site.url}}/images/board/erica.jpg"/>
+                        <a class="board-img-link" target="erica"><img class="board-img" src="{{site.url}}/images/board/erica.jpg"/></a>
                         <div class="board-content">
                             <p class="board-content-name">Ms. Erica Ma</p>
                             <p class="board-content-title">Co-Founder & Community Advisor, CoCoon</p>
@@ -136,7 +136,7 @@ permalink: /about/board
                         </div>
                     </div>
                     <div class="board-item row">
-                        <img class="board-img" src="{{site.url}}/images/board/zeman.jpg"/>
+                        <a class="board-img-link" target="zeman"><img class="board-img" src="{{site.url}}/images/board/zeman.jpg"/></a>
                         <div class="board-content">
                             <p class="board-content-name">Dr. Allan Zeman, GBM GBS JP</p>
                             <p class="board-content-title">Founder & Chairman, Lan Kwai Fong Group</p>
@@ -156,7 +156,7 @@ permalink: /about/board
                         </div>
                     </div>
                     <div class="board-item row">
-                        <img class="board-img" src="{{site.url}}/images/board/rachel.jpg"/>
+                        <a class="board-img-link" target="rachel"><img class="board-img" src="{{site.url}}/images/board/rachel.jpg"/></a>
                         <div class="board-content">
                             <p class="board-content-name">Ms. Rachel Chan</p>
                             <p class="board-content-title">Chief Executive Officer, InnoFoco</p>
@@ -186,7 +186,7 @@ permalink: /about/board
 <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/components/dimmer.min.js"></script>
 <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/components/modal.min.js"></script>
 <script>
-    $(".board-link").click(function(e) {
+    $(".board-link, .board-img-link").click(function(e) {
         var target = $(this).attr("target")
         $("#"+target).modal("show")
     })
