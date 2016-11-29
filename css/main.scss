@@ -2433,9 +2433,26 @@ $on-laptop:        800px;
 				color: white;
 			}
 
+	#nav-logo {
+		text-decoration: none;
+		border-bottom: 0;
+		top: 5%;
+		left: 3%;
+		position: absolute;
+	}
+
+	#nav-logo img {
+		width: 2em;
+		display: block;
+	}
+
 	#nav {
 		top: 0;
 		cursor: default;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
 		//border-top: 1px solid rgba(255, 255, 255, 0.7);
 		//border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 		//background-color: rgba(0, 0, 0, 0.6);
@@ -3349,7 +3366,7 @@ html {
 	transition: 2s;
 }
 
-h1#logo {
+.title-container {
 	background-color: none;
 	position: absolute;
 	margin-left: auto;
@@ -3358,11 +3375,40 @@ h1#logo {
 	right: 0;
 	top: 30%;
 	color: white;
-	max-width: 70%;
 	text-align: center;
 	font-family: Montserrat, Helvetica, sans-serif;
 	vertical-align: middle;
-	font-size: 4em;
+
+	#logo {
+		font-size: 3em;	
+		padding-bottom: 0;
+		font-weight: bold;
+	}
+}
+
+#title-container-sub {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+
+	#line-title {
+		font-size: 1.2em;
+		padding-bottom: 0;
+		margin: 0 0.5em 0 0.5em;
+		font-weight: bold;
+	}
+
+	.line-separator{
+		height:5px;
+		background: #fff;
+		border-bottom: 1px solid #313030;
+		display: inline-block;
+		width: 50%;
+	}
 }
 
 #sidebar {

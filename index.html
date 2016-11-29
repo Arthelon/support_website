@@ -10,6 +10,7 @@ permalink: /
     <div id="header">
         <!-- Logo -->
         <!-- Nav -->
+        <a id="nav-logo" href="/"><img src="{{site.url}}/images/logo.png"/></a>
         <nav id="nav">
             <ul>
                 <li {% if current.size == 0 %}class='current'{% endif %}><a href="{{site.url}}/">Home</a></li>
@@ -44,7 +45,14 @@ permalink: /
                 <li  {% if current[1] == 'partners' %}class='current'{% endif %}><a href="{{site.url}}/partners">Partners</a></li>
             </ul>
         </nav>
-        <h1 id="logo">Support! International Foundation</h1>
+        <div class="title-container">
+            <h1 id="logo">Support! International</h1>
+            <div id="title-container-sub">
+                <div class="line-separator"></div>
+                <h1 id="line-title">Foundation</h1>
+                <div class="line-separator"></div>
+            </div>
+        </div>
     </div>
 </div>
 
