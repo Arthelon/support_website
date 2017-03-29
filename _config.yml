@@ -9,7 +9,7 @@ description: >
   individuals from all backgrounds within communities, under the guiding principle and
   firm belief that young people are tomorrow’s leaders.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.supportlearning.org" # the base hostname & protocol for your site
+url: "https://www.supportlearning.org" # the base hostname & protocol for your site
 # url: "http://127.0.0.1:4000"
 twitter_username: support
 facebook_username: supportintlfoundation
