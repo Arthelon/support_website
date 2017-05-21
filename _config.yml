@@ -13,6 +13,7 @@ url: "https://www.supportlearning.org" # the base hostname & protocol for your s
 # url: "http://127.0.0.1:4000"
 twitter_username: support
 facebook_username: supportintlfoundation
+instagram_username: supportintlfoundation
 paginate: 54
 
 # Build settings
